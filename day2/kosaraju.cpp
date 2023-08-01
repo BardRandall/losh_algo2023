@@ -26,7 +26,7 @@ void dfs(int v, Graph& graph, std::vector<int>& color,
          std::vector<int>& answer) {
     color[v] = 1;
     for (int u : graph.GetNeighbors(v)) {
-        if (color[v] == 0) {
+        if (color[u] == 0) {
             dfs(u, graph, color, answer);
         }
     }
