@@ -26,10 +26,10 @@ void dfs(int v, Graph& graph, std::vector<int>& color,
          std::vector<int>& answer, bool& has_cycle) {
     color[v] = 1;
     for (int u : graph.GetNeighbors(v)) {
-        if (color[v] == 1) {
+        if (color[u] == 1) {
             has_cycle = true;
             return;
-        } else if (color[v] == 0) {
+        } else if (color[u] == 0) {
             dfs(u, graph, color, answer, has_cycle);
         }
     }
