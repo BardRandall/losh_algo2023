@@ -13,7 +13,6 @@ public:
 
     void AddEdge(int from, int to) {
         data_[from].push_back(to);
-        data_[to].push_back(from);  // для неорграфа
     }
 
     const std::vector<int>& GetNeighbors(int v) {
