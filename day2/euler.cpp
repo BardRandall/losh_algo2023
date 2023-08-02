@@ -11,11 +11,6 @@ using Graph = std::vector<std::vector<int>>;
 void euler(int v, Graph& g, std::vector<Edge>& edges, std::vector<int>& p, std::vector<bool>& used) {
     while (p[v] != g[v].size()) {
         int e = g[v][p[v]];
-        if (used[e]) {
-            p[v]++;
-        }
-        used[e] = true;
-        used[e ^ 1] = true;
         ++p[v];
         euler(edges[e].to, g, edges, p, used);
     }
