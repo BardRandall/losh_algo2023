@@ -11,3 +11,8 @@ add_executable(kosaraju day2/kosaraju.cpp)
 add_executable(prefix_function day3/prefix_function.cpp)
 add_executable(z_function day3/z_function.cpp)
 add_executable(manaker day3/manaker.cpp)
+
+add_executable(merge_sort day4/merge_sort.cpp)
+add_executable(quick_sort day4/quick_sort.cpp)
+add_executable(kth_element day4/kth_element.cpp)
+add_executable(stack day4/stack.cpp)
