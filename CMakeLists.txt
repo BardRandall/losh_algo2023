@@ -16,3 +16,6 @@ add_executable(merge_sort day4/merge_sort.cpp)
 add_executable(quick_sort day4/quick_sort.cpp)
 add_executable(kth_element day4/kth_element.cpp)
 add_executable(stack day4/stack.cpp)
+
+add_executable(interval_tree day6/interval_tree.cpp)
+add_executable(interval_tree_delayed day6/interval_tree_delayed.cpp)
