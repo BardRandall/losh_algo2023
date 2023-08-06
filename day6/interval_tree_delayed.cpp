@@ -18,10 +18,10 @@ public:
         while ((1 << k) < n) ++k;
         max_size = 1 << k;
         tree.resize(2 * max_size);
-        for (int i = n; i < 2 * n; ++i) {
+        for (int i = max_size; i < 2 * max_size; ++i) {
             tree[i].value = 0;
         }
-        for (int i = n - 1; i > 0; --i) {
+        for (int i = max_size - 1; i > 0; --i) {
             tree[i].value = tree[2 * i].value + tree[2 * i + 1].value;
         }
     }
